@@ -102,7 +102,7 @@ public interface EventListenerConfig extends//
 		List<Topic> topics = new ArrayList<>();
 
 		// 监听具体某个通道
-		topics.add(new ChannelTopic("kemao_1_event"));
+		topics.add(new ChannelTopic("hzw_event"));
 		container.addMessageListener(l, topics);
 
 		return container;
