@@ -2,6 +2,7 @@
 	width: 100%;
 	display: table;
 	border-bottom: 1px solid #aaa;
+	margin-top: 30px;
 }
 
 .book .col-1, .book .col-10 {
@@ -11,11 +12,28 @@
 	overflow: hidden;
 	float: left;
 }
-
-.book .col-1 {
-	width: 8%;
+#anniu{
+	width: 20%;
+	float: right;
 }
-
+.book .col-1 {
+	width: 10%;
+	height: 10%;
+}
+.sousuo_1{
+	width:50%;
+	height: 40px;
+}
+.sousuo_2{
+	
+	height: 40px;
+}
+#form_sou{
+	width: 70%;
+	height:50px;
+	margin-top:20px;
+	margin-left: 30%;
+}
 .book .col-10 {
 	width: 80%;
 }

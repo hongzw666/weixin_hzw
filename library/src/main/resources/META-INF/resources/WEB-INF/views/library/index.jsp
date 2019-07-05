@@ -10,13 +10,13 @@
 <link href="/hzw/library/css/main.css" rel="stylesheet" />
 </head>
 <body>
-	<form action="" method="get">
+	<form action="" method="get" id="form_sou">
 		<%-- ${} 这种叫做EL表达式 --%>
 		<%-- 大括号里面可以写各种表达式，包括数学运算 --%>
 		<%-- param是EL表达式的内置对象，表示请求参数 --%>
 		<%-- param.keyword 表示获取请求参数里面名为keyword的参数的值 --%>
-		<input name="keyword" value="${param.keyword }" placeholder="关键字" />
-		<button>搜索</button>
+		<input class="sousuo_1" name="keyword" value="${param.keyword }" placeholder="关键字" />
+		<button class="sousuo_2">搜索</button>
 	</form>
 
 	<%-- 循环生成图书的列表 --%>
@@ -46,7 +46,7 @@
 	</c:forEach>
 
 	<%-- 分页按钮 --%>
-	<div>
+	<div id="anniu">
 		<c:if test="${page.number > 0 }">
 			<a href="?pageNumber=${page.number -1 }&keyword=${param.keyword}">上一页</a>
 		</c:if>
